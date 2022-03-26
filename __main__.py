@@ -2,8 +2,11 @@ from api import divisao, conexao, carrega, obj_dict
 
 dados = [
     divisao(5, 0),
-    conexao(user='root', password='***'),
+    divisao(7, 3),
     carrega('arquivo.txt'),
-    obj_dict(None),
+    carrega('errors.py'),
+    obj_dict(
+        conexao(user='root', password='***')
+    ),
 ]
 print(dados)
