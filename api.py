@@ -17,7 +17,7 @@ def set_error(error_code: str):
 
 
 @set_error(errors.ERRO_DE_CALCULO)
-def divisao(a: int, b: int) -> int:
+def divisao(a: int, b: int) -> float:
     return a / b
 
 @set_error(errors.ERRO_BANCO_DADOS)
@@ -30,5 +30,5 @@ def carrega(arquivo: str):
         return f.read()
 
 @set_error(errors.ERRO_OBJETO_NONE)
-def obj_dict(obj: object()) -> dict:
+def obj_dict(obj: object) -> dict:
     return obj.__dict__
