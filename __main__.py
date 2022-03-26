@@ -1,9 +1,9 @@
-from api import divisao, conexao, carrega_arquivo, dados_do_obj
+from api import divisao, conexao, carrega, obj_dict
 
 dados = [
     divisao(5, 0),
     conexao(user='root', password='***'),
-    carrega_arquivo('arquivo.txt'),
-    dados_do_obj(None),
+    carrega('arquivo.txt'),
+    obj_dict(None),
 ]
 print(dados)

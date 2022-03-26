@@ -25,10 +25,10 @@ def conexao(**args) -> mysql.connector.connection.MySQLConnection:
     return mysql.connector.connect(**args)
 
 @set_error(errors.ERRO_ARQUIVO_NAO_ENCONTRADO)
-def carrega_arquivo(arquivo: str):
+def carrega(arquivo: str):
     with open(arquivo) as f:
         return f.read()
 
 @set_error(errors.ERRO_OBJETO_NONE)
-def dados_do_obj(obj: object()) -> dict:
+def obj_dict(obj: object()) -> dict:
     return obj.__dict__
